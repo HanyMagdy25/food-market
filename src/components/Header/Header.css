@@ -99,12 +99,14 @@
     margin-right: 5px;
     margin-left: 0px;
     width: 100%;
+    padding: 0px 0px;
   }
   .input-header input {
     padding: 5px 0px;
   }
   .input-header button {
-    font-size: 14px;
+    font-size: 12px;
     padding: 3px 20px;
   }
+  
 }
