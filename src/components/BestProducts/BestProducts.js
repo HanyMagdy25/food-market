@@ -1,41 +1,19 @@
 import React from "react";
 import "./BestProducts.css";
 import CardLg from "./CardLg";
-import best1 from "../../assets/images/best1.png";
-import best2 from "../../assets/images/best2.png";
-import best3 from "../../assets/images/best3.png";
 import best4 from "../../assets/images/best4.png";
 import best5 from "../../assets/images/best5.png";
+import { products } from "../../utils/data";
 const BestProducts = () => {
   return (
     <div className="BestProducts-section">
       <div className="BestProducts-section-container">
         <h3 className="best-title">أفضل المنتجات</h3>
         <div className="cardslg-div">
-          <CardLg
-            image={best3}
-            title="حليب المراعي"
-            price="25 ريال"
-            vol="15 لتر"
+          {products?.slice(0,4)?.map((item,index)=>(
+            <CardLg item={item} key={index}
           />
-          <CardLg
-            image={best2}
-            title="برايمر fit me"
-            price="25 ريال"
-            vol="15 لتر"
-          />
-          <CardLg
-            image={best1}
-            title="قطع دجاج مقلية"
-            price="25 ريال"
-            vol="15 لتر"
-          />
-          <CardLg
-            image={best3}
-            title="حليب المراعي"
-            price="25 ريال"
-            vol="15 لتر"
-          />
+          ))}
         </div>
         <div className="two-products-div">
           <div className="two-products-div-right">

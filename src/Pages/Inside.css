@@ -1,0 +1,33 @@
+.inside-section{
+    width: 100%;
+}
+.inside-section-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1240px;
+}
+.section-container-top{
+    display: flex;
+}
+.inside-img{
+    width: 50%;
+    height: 500px;
+}
+.inside-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* height: 500px; */
+}
+.inside-details{
+    width: 50%;
+}
+
+.section-container-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.section-container-bottom-cards{
+    display: flex;
+    flex-wrap: wrap;
+}

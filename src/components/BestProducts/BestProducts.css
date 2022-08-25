@@ -123,6 +123,7 @@
   /* height: 400px; */
   overflow: hidden;
   position: relative;
+  text-decoration: none;
 }
 .cardlg .cardlg-heart {
   position: absolute;
