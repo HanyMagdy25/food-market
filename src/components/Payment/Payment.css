@@ -1,0 +1,89 @@
+.payment-section {
+  width: 100%;
+}
+.payment-section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+/*========= card Pay =====*/
+.cardPay {
+  width: 30%;
+  box-shadow: 0px 3px 16px #0000001a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 20px;
+  height: 300px;
+}
+.cardPay:nth-child(even) {
+  margin-top: 50px;
+}
+.cardPay img {
+  width: 100px;
+  background: #baf5dad4;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 0px 3px 25px #a0f3cd9c;
+}
+.cardPay h1 {
+  color: #35c280;
+  font-family: "AraJozoor-Regular";
+  font-weight: 500;
+  font-size: 28px;
+}
+.cardPay p {
+  color: #8e8d8d;
+  font-family: "AraJozoor-Regular";
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* font-size: 28px; */
+}
+
+/* ======== Tablet ======== */
+@media screen and (max-width: 1000px) {
+  .payment-section-container {
+    padding: 55px;
+  }
+  .cardPay {
+    width: 31%;
+  }
+  .cardPay h1 {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+  .cardPay p {
+    font-size: 16px;
+  }
+}
+/* ======== Mobile ======== */
+@media screen and (max-width: 776px) {
+  .cardPay {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .payment-section-container {
+    padding: 55px;
+  }
+  .cardPay:nth-child(even) {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .payment-section-container {
+    padding: 10px;
+  }
+  .cardPay p {
+    font-size: 15px;
+  }
+}

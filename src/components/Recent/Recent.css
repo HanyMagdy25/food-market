@@ -1,0 +1,24 @@
+.recent-section {
+  width: 100%;
+}
+.recent-section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  width: 100%;
+  padding: 60px;
+}
+
+/* ======== Tablet ======== */
+
+/* ======== Mobile ======== */
+@media screen and (max-width: 776px) {
+  .recent-section-container {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .recent-section-container {
+    padding: 20px;
+  }
+}

@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Colors: */
+  --unnamed-color-35c280: #35c280;
+  --unnamed-color-ff9634: #ff9634;
+  --unnamed-color-fe7c02: #fe7c02;
+  --unnamed-color-ffe5aa: #ffe5aa;
+  --unnamed-color-f6f6f6: #f6f6f6;
+  --unnamed-color-8a8a8a: #8a8a8a;
+  --unnamed-color-f8cf65: #f8cf65;
+  --unnamed-color-cdf9cc: #cdf9cc;
+  --unnamed-color-cbcbcb: #cbcbcb;
+  --unnamed-color-5d5d5d: #5d5d5d;
+  --unnamed-color-c7c7c7: #c7c7c7;
+  --unnamed-color-eeeeee: #eeeeee;
+  --unnamed-color-d3fbe8: #d3fbe8;
+  --unnamed-color-ffaeae: #ffaeae;
+  --unnamed-color-ffe5e5: #ffe5e5;
+  --unnamed-color-96adf1: #96adf1;
+  --unnamed-color-e1e9ff: #e1e9ff;
+  --unnamed-color-f5f5f5: #f5f5f5;
+  --color-best-text: #444444;
+  --color-red: #e64c80;
+  --color-black: #080808;
+  --color-text: #8e8d8d;
+  --color-green: #3aef9b;
+  --color-footer: #068B4E;
+  --color-logo: #acacac;
+  --color-white: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "AraJozoor-Regular";
+  src: url("../src/assets/fonts/AraJozoor-Regular.eot");
+  src: url("../src/assets/fonts/AraJozoor-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/AraJozoor-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/AraJozoor-Regular.woff") format("woff"),
+    url("../src/assets/fonts/AraJozoor-Regular.ttf") format("truetype"),
+    url("../src/assets/fonts/AraJozoor-Regular.svg#svgFontName") format("svg");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BalooBhaijaan2-Regular";
+  src: url("../src/assets/fonts/BalooBhaijaan2-Regular.eot");
+  src: url("../src/assets/fonts/BalooBhaijaan2-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/BalooBhaijaan2-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/BalooBhaijaan2-Regular.woff") format("woff"),
+    url("../src/assets/fonts/BalooBhaijaan2-Regular.ttf") format("truetype"),
+    url("../src/assets/fonts/BalooBhaijaan2-Regular.svg#svgFontName")
+      format("svg");
+  font-display: swap;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "BalooBhaijaan2-Regular";
+  direction: rtl;
+  overflow-x: hidden;
 }
