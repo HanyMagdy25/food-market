@@ -3,8 +3,7 @@ import { NavLink } from "react-router-dom";
 import { navTitle } from "../../utils/data";
 import "./Navbar.css";
 import { IoIosArrowDown } from "react-icons/io";
-// import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineMenu, AiOutlineClose ,AiOutlineArrowDown} from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
