@@ -1,0 +1,42 @@
+.favourite {
+  width: 100%;
+}
+.favourite-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  width: 100%;
+  padding: 20px 65px;
+}
+.favourite-container h2 {
+  color: var(--color-best-text);
+  font-family: "AraJozoor-Regular";
+  font-size: 28px;
+  font-weight: 500;
+}
+.cards-favourite {
+  margin: 30px 0;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.favourite-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.favourite-empty img {
+  width: 400px;
+}
+.favourite-empty h3 {
+  margin-top: 10px;
+  color: var(--color-best-text);
+  font-size: 20px;
+}
+.favourite-empty a {
+  color: var(--color-best-text);
+  font-size: 17px;
+  text-decoration: none;
+}

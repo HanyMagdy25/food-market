@@ -43,7 +43,7 @@
 }
 .input-header {
   margin-top: 10px;
-  background-color: #f5f5f5;
+  background-color: var(--color-bg-white);
   padding: 3px 6px;
   border-radius: 10px;
   margin-left: 10px;
@@ -103,10 +103,16 @@
   }
   .input-header input {
     padding: 5px 0px;
+    max-width: 150px;
   }
   .input-header button {
     font-size: 12px;
     padding: 3px 20px;
   }
-  
+}
+@media screen and (max-width: 400px) {
+  .input-header input {
+    max-width: 120px;
+  }
+
 }

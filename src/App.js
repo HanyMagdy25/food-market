@@ -9,8 +9,12 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 // import { Payment } from "./components/Payment/Payment";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home";
-import Inside from "./Pages/Inside";
+// import Inside from "./Pages/Inside";
 import { useEffect } from "react";
+import Product from "./Pages/Product/Product";
+import Favourite from "./Pages/Favourite/Favourite";
+import { GlobalProvider } from "./context/GlobalContext";
+import Cart from "./Pages/Cart/Cart";
 
 function App() {
 
@@ -25,7 +29,8 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <GlobalProvider >
+      <div className="App">
       <Router>
       <ScrollToTop />
         <Topbar />
@@ -33,12 +38,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/software-cloud-test" element={<Home />} />
-          <Route path="/inside/:id" element={<Inside />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/favourite" element={<Favourite />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
-
         <Footer />
       </Router>
     </div>
+    </GlobalProvider>
+    
   );
 }
 

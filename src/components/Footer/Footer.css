@@ -7,68 +7,70 @@
   margin-right: auto;
   max-width: 1240px;
   width: 100%;
-  padding: 60px 60px 20px 60px ;
+  padding: 60px 60px 20px 60px;
   color: var(--color-white);
 }
-.footer-top{
-    display: flex;
-    justify-content: space-between;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
 }
 .footer-top h4 {
-    /* list-style: none; */
-    margin-bottom: 12px;
+  /* list-style: none; */
+  margin-bottom: 12px;
 }
 .footer-top ul li {
-    list-style: none;
+  list-style: none;
 }
-.footer-top ul li a{
-    text-decoration: none;
-    color: var(--color-white);
+.footer-top ul li a {
+  text-decoration: none;
+  color: var(--color-white);
 }
-.footer-icons{
-    display: flex;
-    flex-direction: column;
+.footer-icons {
+  display: flex;
+  flex-direction: column;
 }
-.footer-icons a{
-    padding: 10px;
-    background: #fff;
-    color: #05894D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    font-size: 22px;
-    box-shadow: 0px 0px 9px #3AEF9B57;
+.footer-icons a {
+  padding: 10px;
+  background: #fff;
+  color: #05894d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 22px;
+  box-shadow: 0px 0px 9px #3aef9b57;
 }
-.footer-copyright{
-    display: flex;
-    justify-content: center;
+.footer-copyright {
+  display: flex;
+  justify-content: center;
 }
-.footer-copyright span{
-   display: flex;
-   align-items: center;
+.footer-copyright span {
+  display: flex;
+  align-items: center;
 }
-hr{
-    margin: 25px 0;
-    width: 90%;
+hr {
+  margin: 25px 0;
+  width: 90%;
 }
 
 /* ================ */
 @media screen and (max-width: 1000px) {
-    
+}
+@media screen and (max-width: 776px) {
+  .footer-container {
+    padding: 30px 20px 20px 20px;
   }
-  @media screen and (max-width: 776px) {
-    .footer-container {
-        padding: 30px 20px 20px 20px ;
-      }
-    .footer-top{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .footer-top-div{
-        /* width: 50%; */
-        margin-top: 20px;
-    }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  .footer-top-div {
+    /* width: 50%; */
+    margin-top: 20px;
+  }
+}

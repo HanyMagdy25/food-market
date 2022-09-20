@@ -17,7 +17,7 @@
   --unnamed-color-ffe5e5: #ffe5e5;
   --unnamed-color-96adf1: #96adf1;
   --unnamed-color-e1e9ff: #e1e9ff;
-  --unnamed-color-f5f5f5: #f5f5f5;
+  --color-bg-white: #f5f5f5;
   --color-best-text: #444444;
   --color-red: #e64c80;
   --color-black: #080808;
@@ -64,3 +64,19 @@ body {
   direction: rtl;
   overflow-x: hidden;
 }
+
+.btn-green{
+    background-color: #3AEF9B;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-white);
+    outline: none;
+    padding: 0px 25px;
+    font-family: "AraJozoor-Regular";
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .remove:hover{
+    background-color: #dc3545 !important;
+  }
