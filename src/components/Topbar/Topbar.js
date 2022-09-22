@@ -10,7 +10,6 @@ const Topbar = () => {
   const [cartItems, setCartItems] = useState(null);
   const { cart } = useContext(GlobalContext);
 
-  console.log("cc", cart.length);
   useEffect(() => {
     setCartItems(cart.length);
   }, [cart.length]);
@@ -30,9 +29,9 @@ const Topbar = () => {
             <Link to="/favourite" className="icon-topbar topbar-heart">
               <BsHeartFill />
             </Link>
-            <span className="icon-topbar topbar-user">
+            <Link to="/signup" className="icon-topbar topbar-user">
               <FaUserAlt />
-            </span>
+            </Link>
             <span className="icon-topbar topbar-global">
               <AiOutlineGlobal />
             </span>

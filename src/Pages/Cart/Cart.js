@@ -8,18 +8,11 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   const [total, setTotal] = useState(null);
   const { cart } = useContext(GlobalContext);
-  console.log("cart:", cart);
-  //   console.log("cart:", state.cart);
-
   useEffect(() => {
-    // setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
     setTotal(
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
     );
   }, [cart]);
-
-  console.log(cart.qty);
-  console.log("total", total);
 
   return (
     <div className="cart-section">

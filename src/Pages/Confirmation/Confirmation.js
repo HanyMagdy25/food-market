@@ -3,6 +3,9 @@ import "./Confirmation.css";
 import { BsCalendar2Date, BsPhone } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import { Link } from "react-router-dom";
+import paypal from "../../assets/images/paypal.png";
+import visa from "../../assets/images/visa.png";
+import apple from "../../assets/images/apple-pay.png";
 export default function Confirmation() {
   return (
     <div className="confirm">
@@ -49,6 +52,16 @@ export default function Confirmation() {
               <span>
                 أوافق على شروط الخدمة و ألتزم بها <Link to="/">قراءة</Link>
               </span>
+            </div>
+            <div className="visa-card">
+                <img src={paypal} alt="paypal" />
+                <img src={apple} alt="paypal" />
+                <img src={visa} alt="paypal" />
+                <img src={paypal} alt="paypal" />
+                <img src={apple} alt="paypal" />
+            </div>
+            <div className="confirm-btn">
+                <button className="btn-green">إتمام الطلب</button>
             </div>
           </div>
         </div>

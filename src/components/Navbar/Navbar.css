@@ -35,31 +35,12 @@
   padding: 0px 15px;
   border-radius: 10px;
 }
-.navbar-logo {
-  color: var(--white);
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-}
-.navbar-logo .logo-mov {
-  margin: 0px 4px;
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
   text-align: center;
   align-items: center;
 }
-
-/* .nav-item {
-    height: 80px;
-  } */
-
 .nav-links {
   color: var(--color-white);
   display: flex;
@@ -79,13 +60,9 @@
   transition: all 0.2s ease-out;
 }
 
-.fa-bars {
-  color: var(--white);
-}
-
-.nav-links-mobile {
+/* .nav-links-mobile {
   display: none;
-}
+} */
 
 .menu-icon {
   display: none;
@@ -96,51 +73,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    width: 115%;
+    width: 100vw;
     height: 80vh;
     position: absolute;
     top: 49px;
     left: +100%;
-    opacity: 1;
+    opacity: 0;
     transition: all 0.5s ease;
     overflow-x: hidden;
   }
-  /* .navbar-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 80px;
-      width: 80%;
-      max-width: 1500px;
-    } */
-
   .nav-menu.active {
     background-color: var(--color-green);
-    left: -20px;
+    left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
-
   .nav-links {
     text-align: center;
     margin: 10px 0;
     padding: 1rem 4rem;
     width: 100%;
     display: table;
-    /* background-color: tomato; */
   }
-
   .nav-links:hover {
     background-color: transparent;
     color: var(--white);
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--white);
   }
-
   .logo-container {
-    /* background-color: aqua; */
     width: 100px;
   }
   .navbar-logo {
@@ -150,12 +112,9 @@
     /* width: 20%; */
   }
   .navbar-logo img {
-    /* max-width: 100% !important;
-      width: 100%; */
     height: auto;
     width: 160px;
   }
-
   .menu-icon {
     display: block;
     position: absolute;
@@ -174,13 +133,11 @@
     width: 90%;
     margin-top: 20px;
   }
-
   .form-control form {
     display: flex;
     width: 300px;
   }
 }
-
 
 /* ======== Tablet ======== */
 @media screen and (max-width: 1000px) {
@@ -197,18 +154,10 @@
   .cardPay p {
     font-size: 16px;
   }
-}
-/* ======== Mobile ======== */
-@media screen and (max-width: 1000px) {
   .navbar {
-    padding: 0 20px;
+    padding: 0 0px;
   }
-}
-@media screen and (max-width: 776px) {
-  .navbar {
-    padding: 0 10px;
+  .navbar-all-sections {
+    margin-right: 10px;
   }
-}
-@media screen and (max-width: 330px) {
-
 }
