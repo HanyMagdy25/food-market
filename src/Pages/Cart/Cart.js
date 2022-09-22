@@ -7,12 +7,35 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [total, setTotal] = useState(null);
+  const [cartLocal, setCartLocal] = useState([]);
   const { cart } = useContext(GlobalContext);
+  console.log("cart", cart);
+  console.log("cartLocal", cartLocal);
   useEffect(() => {
+    setCartLocal(
+      localStorage.getItem("cart")
+        ? JSON.parse(localStorage.getItem("cart"))
+        : []
+    );
     setTotal(
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
     );
   }, [cart]);
+
+  // const initialState = {
+  //   watchlist: localStorage.getItem("watchlist")
+  //     ? JSON.parse(localStorage.getItem("watchlist"))
+  //     : [],
+  //   watched: localStorage.getItem("watched")
+  //     ? JSON.parse(localStorage.getItem("watched"))
+  //     : [],
+  //   favourite: localStorage.getItem("favourite")
+  //     ? JSON.parse(localStorage.getItem("favourite"))
+  //     : [],
+  //   cart: localStorage.getItem("cart")
+  //     ? JSON.parse(localStorage.getItem("cart"))
+  //     : [],
+  // };
 
   return (
     <div className="cart-section">
@@ -21,7 +44,7 @@ const Cart = () => {
         {cart.length > 0 ? (
           <div className="cards-in-cart">
             <div className="right-cart">
-              {cart.map((item, index) => (
+              {cartLocal.map((item, index) => (
                 <CardOfCart key={index} item={item} type="favourite" />
               ))}
             </div>
@@ -54,7 +77,7 @@ const Cart = () => {
                 </div>
                 <div className="last">
                   <Link to="/confirmation" className="btn-green">
-                  تأكيد الشراء
+                    تأكيد الشراء
                   </Link>
                 </div>
               </div>

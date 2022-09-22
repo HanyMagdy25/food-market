@@ -5,9 +5,9 @@ import { BsDash } from "react-icons/bs";
 import { IoIosClose } from "react-icons/io";
 import { GlobalContext } from "../../context/GlobalContext";
 const CardOfCart = ({ item }) => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(item?.qty);
   const {changeProductQty ,removeProductFromCart} = useContext(GlobalContext);
-  console.log("count", count);
+
   return (
     <div className="CardOfCart">
       <span className="close-cart" onClick={()=>removeProductFromCart(item.id)}>
@@ -28,7 +28,7 @@ const CardOfCart = ({ item }) => {
               <button className="plus" onClick={() => {setCount(count + 1);changeProductQty(item,count+1)}}>
                 <AiOutlinePlus />
               </button>
-              <span>{count }</span>
+              <span>{count}</span>
               <button
                 className="minus"
                 // disabled={count < 2}
