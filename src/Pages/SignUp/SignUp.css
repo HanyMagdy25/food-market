@@ -1,0 +1,140 @@
+.signup {
+  width: 100%;
+  margin: 50px 0;
+}
+.signup-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  width: 100%;
+}
+
+.signup-container .sign-bg-image {
+  background-image: url(../../assets/images/signup.png);
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}
+.signup-container .login-bg-image {
+  background-image: url(../../assets/images/login.png);
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}
+.signup-content {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  width: 450px;
+  padding: 20px;
+}
+.signup-content > h2 {
+  font-family: "AraJozoor-Regular";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+form .all-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+form .form-control label {
+  color: #444444;
+  margin-bottom: 5px;
+}
+form .form-control input {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 38px;
+  padding: 0px 12px;
+}
+form .remember {
+  display: flex;
+  justify-content: space-between;
+  color: #5D5D5D;
+  
+}
+form .remember a{
+  color: #5D5D5D;
+ font-size: 17px;
+}
+form .agree p {
+  font-size: 14px;
+  color: #5d5d5d;
+}
+form .agree p span {
+  font-size: 14px;
+  color: var(--color-black);
+  font-weight: 600;
+  margin-right: 2px;
+}
+form .sign-btn-google {
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-green);
+  outline: none;
+  padding: 0px 25px;
+  width: 100%;
+  font-family: "AraJozoor-Regular";
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  box-shadow: 0px 3px 21px #8e8d8d4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .sign-btn-google img {
+  margin-right: 10px;
+}
+form .or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #707070;
+  margin-top: 10px;
+}
+form .already-have {
+  color: #8e8d8d;
+  margin-top: 25px;
+}
+form .already-have a {
+  text-decoration: none;
+  color: #8e8d8d;
+}
+
+@media screen and (max-width: 800px) {
+  .signup {
+    margin: 40px 0;
+  }
+  .signup-container .sign-bg-image {
+    height: 830px;
+  }
+  .signup-content {
+    top: 2%;
+    right: 2%;
+    width: 95%;
+  }
+  form .form-control {
+    width: 100%;
+  }
+  form .form-control label {
+    text-align: start;
+  }
+}

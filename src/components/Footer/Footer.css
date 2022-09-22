@@ -53,24 +53,19 @@ hr {
   margin: 25px 0;
   width: 90%;
 }
-
 /* ================ */
-@media screen and (max-width: 1000px) {
-}
 @media screen and (max-width: 776px) {
   .footer-container {
-    padding: 30px 20px 20px 20px;
+    padding: 30px 10px 20px 10px;
   }
   .footer-top {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: start;
   }
   .footer-top-div {
-    /* width: 50%; */
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }

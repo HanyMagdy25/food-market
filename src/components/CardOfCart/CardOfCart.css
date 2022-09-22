@@ -65,58 +65,82 @@
   justify-content: space-between;
   align-items: center;
 }
-.cart-quantity-div{
-    display: flex;
-    align-items: center;
+.cart-quantity-div {
+  display: flex;
+  align-items: center;
 }
-.cart-quantity-div > span{
-    /* display: flex; */
-    margin-left: 25px;
-    color: #8E8D8D;
-
+.cart-quantity-div > span {
+  /* display: flex; */
+  margin-left: 25px;
+  color: #8e8d8d;
 }
 
-.cart-quantity-div  .plus {
-    background-color: var(--color-green);
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    color: var(--color-white);
-    cursor: pointer;
+.cart-quantity-div .plus {
+  background-color: var(--color-green);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.cart-quantity-div .minus {
+  background-color: transparent;
+  color: var(--color-green);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-green);
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+.cart-quantity-div .product-quantity-div-inside-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-quantity-div-inside-green span {
+  margin: 0 22px;
+  font-size: 22px;
+  font-weight: 600;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-bootom-price {
+  color: var(--color-black);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .cart-quantity-div > span {
+    margin-left: 5px;
+  }
+  .cart-quantity-div .plus {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
   .cart-quantity-div .minus {
-    background-color: transparent;
-    color: var(--color-green);
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--color-green);
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  .cart-quantity-div .product-quantity-div-inside-green {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
   .product-quantity-div-inside-green span {
-    margin: 0 22px;
-    font-size: 22px;
-    font-weight: 600;
-    width: 20px;
-    display: flex;
-    justify-content: center;
+    margin: 0 20px;
+    font-size: 18px;
+    width: 10px;
   }
-
-  .cart-bootom-price{
+  .cart-bootom-price h3 {
     color: var(--color-black);
     font-size: 18px;
   }
+}

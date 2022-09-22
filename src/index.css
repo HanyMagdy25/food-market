@@ -23,7 +23,7 @@
   --color-black: #080808;
   --color-text: #8e8d8d;
   --color-green: #3aef9b;
-  --color-footer: #068B4E;
+  --color-footer: #068b4e;
   --color-logo: #acacac;
   --color-white: #ffffff;
 }
@@ -64,19 +64,35 @@ body {
   direction: rtl;
   overflow-x: hidden;
 }
+a{
+  text-decoration: none;
+}
 
-.btn-green{
-    background-color: #3AEF9B;
-    border: none;
-    border-radius: 6px;
-    color: var(--color-white);
-    outline: none;
-    padding: 0px 25px;
-    font-family: "AraJozoor-Regular";
-    cursor: pointer;
-    font-size: 18px;
-  }
+.btn-green {
+  background-color: #3aef9b;
+  border: none;
+  border-radius: 6px;
+  color: var(--color-white);
+  outline: none;
+  padding: 0px 25px;
+  font-family: "AraJozoor-Regular";
+  cursor: pointer;
+  font-size: 18px;
+}
+.sign-btn {
+  background-color: #3aef9b;
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  outline: none;
+  padding: 0px 25px;
+  width: 100%;
+  font-family: "AraJozoor-Regular";
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
-  .remove:hover{
-    background-color: #dc3545 !important;
-  }
+.remove:hover {
+  background-color: #dc3545 !important;
+}

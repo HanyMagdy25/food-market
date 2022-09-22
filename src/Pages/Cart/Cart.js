@@ -60,9 +60,9 @@ const Cart = () => {
                   <h3>123 ريال</h3>
                 </div>
                 <div className="last">
-                  <button className="btn-green">
+                  <Link to="/confirmation" className="btn-green">
                   تأكيد الشراء
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

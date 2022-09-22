@@ -6,11 +6,11 @@ import { IoIosClose } from "react-icons/io";
 import { GlobalContext } from "../../context/GlobalContext";
 const CardOfCart = ({ item }) => {
   const [count, setCount] = useState(1);
-  const {changeProductQty } = useContext(GlobalContext);
+  const {changeProductQty ,removeProductFromCart} = useContext(GlobalContext);
   console.log("count", count);
   return (
     <div className="CardOfCart">
-      <span className="close-cart">
+      <span className="close-cart" onClick={()=>removeProductFromCart(item.id)}>
         <IoIosClose />
       </span>
       <img src={item?.image[0]} alt={item.title} />

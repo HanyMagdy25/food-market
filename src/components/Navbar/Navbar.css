@@ -97,10 +97,10 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    width: 110%;
+    width: 115%;
     height: 80vh;
     position: absolute;
-    top: 50px;
+    top: 49px;
     left: +100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -206,7 +206,7 @@
 }
 @media screen and (max-width: 776px) {
   .navbar {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 330px) {
